@@ -1,8 +1,11 @@
-<View controllerName="northwind.products.northwindapp.controller.Home" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+<View controllerName="northwind.products.northwindapp.controller.Home" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
 	<Shell id="shell">
 		<Page id="page" title="{i18n>title}">
 			<content>
-				<Button text="Click Me" />
+				<Button text="Click Me to do something" />
+				<ComboBox items="{ path: '/Categories' }">
+					<core:Item key="{CategoryName}" text="{CategoryName}" />
+				</ComboBox>
 			</content>
 		</Page>
 	</Shell>
