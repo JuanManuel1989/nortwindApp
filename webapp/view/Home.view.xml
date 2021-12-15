@@ -1,0 +1,9 @@
+<View controllerName="northwind.products.northwindapp.controller.Home" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<Page id="page" title="{i18n>title}">
+			<content>
+				<Button text="Click Me" />
+			</content>
+		</Page>
+	</Shell>
+</View>
