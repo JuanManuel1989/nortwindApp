@@ -6,6 +6,9 @@
 				<ComboBox items="{ path: '/Categories' }">
 					<core:Item key="{CategoryName}" text="{CategoryName}" />
 				</ComboBox>
+				<HBox>
+					<Text text="Vamos dandole forma a esto" />
+				</HBox>
 			</content>
 		</Page>
 	</Shell>
