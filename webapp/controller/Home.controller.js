@@ -10,6 +10,13 @@ sap.ui.define(
       "northwind.products.northwindapp.controller.Home",
       {
         onInit: function () {},
+        onRefreshTable: function () {
+          var oTableProducts = this.getView().byId("idProductTable");
+          oTableProducts.getBinding("items").refresh();
+
+          var oTableCustomer = this.getView().byId("idCustomerTable");
+          oTableProducts.getBinding("items").refresh();
+        },
       }
     );
   }

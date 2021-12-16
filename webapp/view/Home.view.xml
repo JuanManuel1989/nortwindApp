@@ -1,13 +1,86 @@
-<mvc:View controllerName="northwind.products.northwindapp.controller.Home" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+<mvc:View controllerName="northwind.products.northwindapp.controller.Home" xmlns:dnd="sap.ui.core.dnd" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" height="100%">
 	<Shell id="shell">
 		<Page id="page" title="{i18n>title}">
 			<content>
-				<Button text="Click Me to do something" />
-				<ComboBox items="{ path: '/Categories' }">
-					<core:Item key="{CategoryName}" text="{CategoryName}" />
-				</ComboBox>
 				<HBox>
-					<Text text="Vamos dandole forma a esto" />
+					<Button text="Click Me to do something" />
+					<ComboBox items="{ path: '/Categories' }">
+						<core:Item key="{CategoryName}" text="{CategoryName}" />
+					</ComboBox>
+					<ToolbarSpacer />
+				</HBox>
+				<ToggleButton id="bRefresh" text="Refresh Tables" press="onRefreshTable" />
+				<HBox renderType="Bare">
+					<Table id="idProductTable" items="{path: '/Products'}" growing="true" growingThreshold="5">
+						<headerToolbar>
+							<OverflowToolbar>
+								<content>
+									<Title text="Products" level="H2" />
+									<ToolbarSpacer />
+									<ToggleButton id="toggleInfoToolbar" text="Refresh Products Table" press="onToggleInfoToolbar" />
+								</content>
+							</OverflowToolbar>
+						</headerToolbar>
+						<columns>
+							<Column width="12em">
+								<Text text="Product Id/Name" />
+							</Column>
+							<Column minScreenWidth="Tablet" demandPopin="true">
+								<Text text="Supplier" />
+							</Column>
+							<Column minScreenWidth="Desktop" demandPopin="true" hAlign="End">
+								<Text text="Unit Price" />
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem vAlign="Middle">
+								<cells>
+									<ObjectIdentifier title="{ProductName}" text="{ProductID}" />
+									<Text text="{SupplierID}" />
+									<ObjectNumber number="{UnitPrice}" />
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+					<VBox justifyContent="Center" class="sapUiTinyMarginBeginEnd">
+						<Button class="sapUiTinyMarginBottom" icon="sap-icon://navigation-right-arrow" tooltip="Move to selected" press="moveToSelectedProductsTable" />
+						<Button icon="sap-icon://navigation-left-arrow" tooltip="Move to available" press="moveToAvailableProductsTable" />
+					</VBox>
+					<Table id="idCustomerTable" items="{path: '/Customers'}" growing="true" growingThreshold="5">
+						<headerToolbar>
+							<OverflowToolbar>
+								<content>
+									<Title text="Customers" level="H2" />
+									<ToolbarSpacer />
+									<ToggleButton text="Refresh Customers Table" press="onToggleInfoToolbar" />
+								</content>
+							</OverflowToolbar>
+						</headerToolbar>
+						<columns>
+							<Column width="12em">
+								<Text text="Customer Id/Name" />
+							</Column>
+							<Column minScreenWidth="Tablet" demandPopin="true">
+								<Text text="Contact" />
+							</Column>
+							<Column minScreenWidth="Desktop" demandPopin="true" hAlign="End">
+								<Text text="City" />
+							</Column>
+							<Column minScreenWidth="Desktop" demandPopin="true" hAlign="End">
+								<Text text="Phone" />
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem vAlign="Middle">
+								<cells>
+									<ObjectIdentifier title="{CompanyName}" text="{CustomerID}" />
+									<Text text="{ContactName}" />
+									<ObjectIdentifier title="{City}" text="{Country}" />
+									<Text text="{Phone}" />
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
 				</HBox>
 			</content>
 		</Page>
