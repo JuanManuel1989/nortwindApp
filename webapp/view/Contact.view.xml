@@ -3,6 +3,7 @@
     <Page id="page" title="{i18n>title}">
         <content>
             <Text text="Super Tortas Toñito" />
+            <Text text="Tortas Don Toño" />
         </content>
     </Page>
 </mvc:View>
