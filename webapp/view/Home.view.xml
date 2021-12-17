@@ -13,6 +13,7 @@
 				<Text text="texto 1" />
 				<Text text="texto 2" />
 				<Text text="texto 3" />
+				<Text text="texto 4" />
 				<HBox renderType="Bare">
 					<Table id="idProductTable" items="{path: '/Products'}" growing="true" growingThreshold="5">
 						<headerToolbar>
