@@ -10,6 +10,7 @@
 					<ToolbarSpacer />
 				</HBox>
 				<ToggleButton id="bRefresh" text="Refresh Tables" press="onRefreshTable" />
+				<Text text="texto 1" />
 				<HBox renderType="Bare">
 					<Table id="idProductTable" items="{path: '/Products'}" growing="true" growingThreshold="5">
 						<headerToolbar>
