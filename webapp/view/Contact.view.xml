@@ -1,6 +1,8 @@
 <mvc:View controllerName="northwind.products.northwindapp.controller.App" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
 
     <Page id="page" title="{i18n>title}">
-        <content></content>
+        <content>
+            <Text text="Tortas Don Toño" />
+        </content>
     </Page>
 </mvc:View>
