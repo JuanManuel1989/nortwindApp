@@ -46,10 +46,11 @@
 							</ColumnListItem>
 						</items>
 					</Table>
-					<VBox justifyContent="Center" class="sapUiTinyMarginBeginEnd">
+					<!-- <VBox justifyContent="Center" class="sapUiTinyMarginBeginEnd">
 						<Button class="sapUiTinyMarginBottom" icon="sap-icon://navigation-right-arrow" tooltip="Move to selected" press="moveToSelectedProductsTable" />
 						<Button icon="sap-icon://navigation-left-arrow" tooltip="Move to available" press="moveToAvailableProductsTable" />
-					</VBox>
+					</VBox> -->
+					<VBox class="sapUiMediumMarginBeginEnd"></VBox>
 					<Table id="idCustomerTable" items="{path: '/Customers'}" growing="true" growingThreshold="5">
 						<headerToolbar>
 							<OverflowToolbar>
