@@ -86,6 +86,42 @@
 							</ColumnListItem>
 						</items>
 					</Table>
+					<VBox class="sapUiMediumMarginBeginEnd"></VBox>
+					<Table id="idVendorTable" items="{path: '/Customers'}" growing="true" growingThreshold="5">
+						<headerToolbar>
+							<OverflowToolbar>
+								<content>
+									<Title text="Customers" level="H2" />
+									<ToolbarSpacer />
+									<ToggleButton text="Refresh Customers Table" press="onToggleInfoToolbar" />
+								</content>
+							</OverflowToolbar>
+						</headerToolbar>
+						<columns>
+							<Column width="12em">
+								<Text text="Customer Id/Name" />
+							</Column>
+							<Column minScreenWidth="Tablet" demandPopin="true">
+								<Text text="Contact" />
+							</Column>
+							<Column minScreenWidth="Desktop" demandPopin="true" hAlign="End">
+								<Text text="City" />
+							</Column>
+							<Column minScreenWidth="Desktop" demandPopin="true" hAlign="End">
+								<Text text="Phone" />
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem vAlign="Middle">
+								<cells>
+									<ObjectIdentifier title="{CompanyName}" text="{CustomerID}" />
+									<Text text="{ContactName}" />
+									<ObjectIdentifier title="{City}" text="{Country}" />
+									<Text text="{Phone}" />
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
 				</HBox>
 			</content>
 		</Page>
