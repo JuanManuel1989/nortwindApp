@@ -1,9 +1,9 @@
 sap.ui.define(
-  ["sap/ui/core/mvc/Controller"],
+  ["sap/ui/core/mvc/Controller", "sap/m/MessageToast"],
   /**
    * @param {typeof sap.ui.core.mvc.Controller} Controller
    */
-  function (Controller) {
+  function (Controller, MessageToast) {
     "use strict";
 
     return Controller.extend(
@@ -45,6 +45,21 @@ sap.ui.define(
               debugger;
             },
           });
+        },
+
+        onInsertImage: function () {
+          debugger;
+
+          var oImg = this.getView().byId("imgCar");
+
+          var oImageCar = new sap.m.Image({
+            width: "40%",
+          });
+        },
+
+        onShowHello: function () {
+          var msg = "Lorem ipsum dolor sit amet";
+          MessageToast.show(msg);
         },
       }
     );
