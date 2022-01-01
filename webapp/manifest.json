@@ -20,7 +20,7 @@
           "localUri": "localService/metadata.xml"
         }
       }
-		}
+    }
   },
   "sap.ui": {
     "technology": "UI5",
@@ -48,7 +48,7 @@
       "id": "App"
     },
     "dependencies": {
-			"minUI5Version": "1.97.0",
+      "minUI5Version": "1.97.0",
       "libs": {
         "sap.ui.core": {},
         "sap.m": {},
@@ -67,10 +67,10 @@
           "bundleName": "northwind.products.northwindapp.i18n.i18n"
         }
       },
-			"": {
-				"dataSource": "mainService",
-				"preload": true
-			}
+      "": {
+        "dataSource": "mainService",
+        "preload": true
+      }
     },
     "resources": {
       "css": [

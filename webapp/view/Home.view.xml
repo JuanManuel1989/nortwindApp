@@ -15,13 +15,13 @@
 				<Text text="texto 3" />
 				<Text text="texto 4" />
 				<HBox renderType="Bare">
-					<Table id="idProductTable" items="{path: '/Products'}" growing="true" growingThreshold="5">
+					<Table id="idProductTable" items="{path: 'oModelMNA>/'}" growing="true" growingThreshold="5">
 						<headerToolbar>
 							<OverflowToolbar>
 								<content>
 									<Title text="Products" level="H2" />
 									<ToolbarSpacer />
-									<ToggleButton id="toggleInfoToolbar" text="Refresh Products Table" press="onToggleInfoToolbar" />
+									<ToggleButton id="toggleInfoToolbar" text="Refresh Products Table" press="onNewModel" />
 								</content>
 							</OverflowToolbar>
 						</headerToolbar>
@@ -39,19 +39,15 @@
 						<items>
 							<ColumnListItem vAlign="Middle">
 								<cells>
-									<ObjectIdentifier title="{ProductName}" text="{ProductID}" />
-									<Text text="{SupplierID}" />
-									<ObjectNumber number="{UnitPrice}" />
+									<ObjectIdentifier title="{oModelMNA>ProductName}" text="{oModelMNA>ProductID}" />
+									<Text text="{oModelMNA>SupplierID}" />
+									<ObjectNumber number="{oModelMNA>UnitPrice}" />
 								</cells>
 							</ColumnListItem>
 						</items>
 					</Table>
-					<!-- <VBox justifyContent="Center" class="sapUiTinyMarginBeginEnd">
-						<Button class="sapUiTinyMarginBottom" icon="sap-icon://navigation-right-arrow" tooltip="Move to selected" press="moveToSelectedProductsTable" />
-						<Button icon="sap-icon://navigation-left-arrow" tooltip="Move to available" press="moveToAvailableProductsTable" />
-					</VBox> -->
-					<VBox class="sapUiMediumMarginBeginEnd"></VBox>
-					<Table id="idCustomerTable" items="{path: '/Customers'}" growing="true" growingThreshold="5">
+					<VBox class="sapUiTinyMarginBeginEnd"></VBox>
+					<!-- <Table id="idCustomerTable" items="{path: '/Customers'}" growing="true" growingThreshold="5">
 						<headerToolbar>
 							<OverflowToolbar>
 								<content>
@@ -85,8 +81,12 @@
 								</cells>
 							</ColumnListItem>
 						</items>
-					</Table>
-					<VBox class="sapUiMediumMarginBeginEnd"></VBox>
+					</Table> -->
+					<VBox>
+						<Text text="Aqui va una imagen" />
+						<Image src="https://www.rxwallpaper.site/wp-content/uploads/wallpaper-wiki-1080p-cars-wallpapers-download-pic-wpc002328-800x800.jpg" width="30rem" />
+					</VBox>
+					<VBox class="sapUiTinyMarginBeginEnd"></VBox>
 					<Table id="idVendorTable" items="{path: '/Customers'}" growing="true" growingThreshold="5">
 						<headerToolbar>
 							<OverflowToolbar>
