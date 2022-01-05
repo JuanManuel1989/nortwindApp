@@ -125,26 +125,32 @@
 					</Table>
 				</HBox>
 				<HBox>
-					<VBox>
+					<VBox width="50%">
 						<Carousel loop="true" showPageIndicator="true">
 							<pages>
-								<Image src="https://www.rxwallpaper.site/wp-content/uploads/wallpaper-wiki-1080p-cars-wallpapers-download-pic-wpc002328-800x800.jpg" width="30rem" />
-								<Image src="https://static0.hotcarsimages.com/wordpress/wp-content/uploads/2020/05/one-car-garage.jpg" width="30rem" />
-								<Image src="https://static0.hotcarsimages.com/wordpress/wp-content/uploads/2020/11/jaguar-xjr.jpg" width="30rem" />
-								<Image src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/09/9-Via-Carscoops-Cropped.jpg" width="30rem" />
-								<Image src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/08/2019-Porsche-911-GT3-RS-Front-e1598543838998.jpg" width="30rem" />
-								<Image src="https://www.sky.de/static/img/lifestylehighlights/sky_1601_dreamcars.jpg" width="30rem" />
-								<Image src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2021/06/3-Via-Motor-Authority-Cropped.jpg" width="30rem" />
-								<Image src="https://static0.hotcarsimages.com/wordpress/wp-content/uploads/2020/04/sports-cars-everyone-is-sick-of.jpg" width="30rem" />
-								<Image src="https://wallup.net/wp-content/uploads/2019/09/584008-bmw-6-series-sports-convertible-2015-650i-cars.jpg" width="30rem" />
-								<Image src="https://static0.thethingsimages.com/wordpress/wp-content/uploads/2020/05/15-Fastest-Sports-Cars-To-Ever-Come-Out-Of-Germany-1.png" width="30rem" />
-								<Image src="https://static0.hotcarsimages.com/wordpress/wp-content/uploads/2020/06/cheap-cars-expensive-to-maintain.jpg" width="30rem" />
-								<Image src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/09/Volvo-P1800-e1600210798222.jpg" width="30rem" />
+								<Image src="https://www.rxwallpaper.site/wp-content/uploads/wallpaper-wiki-1080p-cars-wallpapers-download-pic-wpc002328-800x800.jpg" />
+								<Image src="https://static0.hotcarsimages.com/wordpress/wp-content/uploads/2020/05/one-car-garage.jpg" />
+								<Image src="https://static0.hotcarsimages.com/wordpress/wp-content/uploads/2020/11/jaguar-xjr.jpg" />
+								<Image src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/09/9-Via-Carscoops-Cropped.jpg" />
+								<Image src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/08/2019-Porsche-911-GT3-RS-Front-e1598543838998.jpg" />
+								<Image src="https://www.sky.de/static/img/lifestylehighlights/sky_1601_dreamcars.jpg" />
+								<Image src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2021/06/3-Via-Motor-Authority-Cropped.jpg" />
+								<Image src="https://static0.hotcarsimages.com/wordpress/wp-content/uploads/2020/04/sports-cars-everyone-is-sick-of.jpg" />
+								<Image src="https://wallup.net/wp-content/uploads/2019/09/584008-bmw-6-series-sports-convertible-2015-650i-cars.jpg" />
+								<Image src="https://static0.thethingsimages.com/wordpress/wp-content/uploads/2020/05/15-Fastest-Sports-Cars-To-Ever-Come-Out-Of-Germany-1.png" />
+								<Image src="https://static0.hotcarsimages.com/wordpress/wp-content/uploads/2020/06/cheap-cars-expensive-to-maintain.jpg" />
+								<Image src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/09/Volvo-P1800-e1600210798222.jpg" />
 							</pages>
 						</Carousel>
 					</VBox>
-					<VBox>
+					<VBox class="sapUiSmallMarginBeginEnd">
 						<Button text="Say Hello" press="onShowHello"></Button>
+					</VBox>
+					<VBox class="sapUiSmallMarginBeginEnd">
+						<Input value="{helloPanel>/recipient/name}" width="100%" description="Hola {helloPanel>/recipient/name}" valueLiveUpdate="true" />
+					</VBox>
+					<VBox>
+						<Button text="Toast Binging" press="onToastBinding" />
 					</VBox>
 				</HBox>
 			</content>

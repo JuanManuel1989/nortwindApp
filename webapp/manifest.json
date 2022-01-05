@@ -70,6 +70,10 @@
       "": {
         "dataSource": "mainService",
         "preload": true
+      },
+      "helloPanel": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/HelloPanel.json"
       }
     },
     "resources": {

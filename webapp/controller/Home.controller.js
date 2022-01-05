@@ -61,6 +61,15 @@ sap.ui.define(
           var msg = "Lorem ipsum dolor sit amet";
           MessageToast.show(msg);
         },
+        onToastBinding: function () {
+          var oBundle = this.getView().getModel("i18n").getResourceBundle();
+          var sName = this.getView()
+            .getModel("helloPanel")
+            .getProperty("/recipient/name");
+          var sMsg = oBundle.getText("helloMsg", [sName, "loquillo"]);
+
+          MessageToast.show(sMsg);
+        },
       }
     );
   }
