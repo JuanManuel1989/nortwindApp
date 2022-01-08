@@ -71,6 +71,10 @@
         "dataSource": "mainService",
         "preload": true
       },
+      "address": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/address.json"
+      },
       "helloPanel": {
         "type": "sap.ui.model.json.JSONModel",
         "uri": "model/HelloPanel.json"
